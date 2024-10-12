@@ -12,8 +12,8 @@
     "max-block-range": 10000,
     "safe-mode": false,
     "port": 4337,
-    "log-level": "fatal",
-    "public-client-log-level": "error",
-    "wallet-client-log-level": "error",
+    "log-level": "info",
+    "public-client-log-level": "info",
+    "wallet-client-log-level": "info",
     "polling-interval": 100
 }

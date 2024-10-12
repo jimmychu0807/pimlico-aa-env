@@ -1,9 +1,9 @@
 services:
   anvil:
-    image: ghcr.io/foundry-rs/foundry:nightly-c4a984fbf2c48b793c8cd53af84f56009dd1070c
+    build:
+      context: ./hardhat-node
+      dockerfile: Dockerfile
     ports: ["8545:8545"]
-    entrypoint:
-      ["anvil", "--host", "0.0.0.0", "--block-time", "1"]
 
   mock-paymaster:
     image: ghcr.io/pimlicolabs/mock-verifying-paymaster:main

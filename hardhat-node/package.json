@@ -1,0 +1,15 @@
+{
+  "name": "hardhat-project",
+  "scripts": {
+    "start": "hardhat node & pnpm start:setup",
+    "start:setup": "wait-port 8545 && hardhat setup:alto"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox-viem": "^3.0.0",
+    "alto + contract-deployer": "link:../mock-alto-bundler",
+    "hardhat": "^2.22.13",
+    "typescript": "~5.0.0",
+    "viem": "^2.21.22",
+    "wait-port": "^1.1.0"
+  }
+}
